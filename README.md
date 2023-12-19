@@ -15,7 +15,9 @@
 
 * cmd에
 <br/>
-    * pip uninstall -y jupyter jupyter_core jupyter-client jupyter-console jupyterlab_pygments qtconsole notebook nbconvert nbformat nbclassic nbclient jupyterlab-widgets jupyter-events jupyter-server jupyter-server-terminals jupyter_server_fileid jupyter_server_ydoc jupyter-ydoc jupyterlab jupyterlab_server
+  
+* pip uninstall -y jupyter jupyter_core jupyter-client jupyter-console jupyterlab_pygments qtconsole notebook nbconvert nbformat nbclassic nbclient jupyterlab-widgets jupyter-events jupyter-server jupyter-server-terminals jupyter_server_fileid jupyter_server_ydoc jupyter-ydoc jupyterlab jupyterlab_server  
+  
 <br/>
 해당 명령어 입력
 
@@ -23,4 +25,4 @@
 
 * %USERPROFILE%\AppData\Roaming\jupyter
 <br/>
-경로의 모든 폴더를 제거
+* 경로의 모든 폴더를 제거
