@@ -49,7 +49,28 @@ pip uninstall -y jupyter jupyter_core jupyter-client jupyter-console jupyterlab_
 
 </br></br>
 - - -
-### 4. (참고) 주피터노트북 테마 설정 관련 (notebook 7.x.x. 이후 버전 사용 불가)
+### 4. (참고) 주피터노트북 초기 경로 변경
+
+* 주피터노트북의 초기경로는 Windows 기준 아래 폴더인데,
+```python
+    C:\Users\사용자명
+```
+* 내가 원하는 경로로 변경하고싶은 경우 환경설정 파일(jupyter_notebook_config.py)을 생성해 구문을 수정해야 한다.
+* 아래 명령어를 cmd(powershell, bash 등 다른 터미널도 괜찮음)에 입력하면 아래 경로에 jupyter_notebook_config.py 파일이 생성되는데,
+  
+```python
+  명령어 : jupyter notebook --generate-config
+  경로 : %USERPROFILE%\.jupyter
+```
+</br>
+    * 해당 파일을 열어 c.NotebookApp.notebook_dir = 혹은 c.ServerApp.root_dir  = 부분의 주석을 풀고 원하는 경로를 따옴표로 감싸서 입력하면 된다. 
+  
+
+  
+
+</br></br>
+- - -
+### 5. (참고) 주피터노트북 테마 설정 관련 (notebook 7.x.x. 이후 버전 사용 불가)
 
 **1) 주피터 노트북 내 Terminal 실행 후 아래 패키지 수동 설치**
 
@@ -68,7 +89,6 @@ https://realblack0.github.io/2020/05/13/jupyter-notebook-themes.html
 ```
 
 **4) 폰트 변경 방법 주피터노트북 config 파일 집합 생성**
-</br>
     * cmd에 아래 명령어 입력
     </br>
 ```python
